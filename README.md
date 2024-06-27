@@ -1,134 +1,73 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2761
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
-\f3\fswiss\fcharset0 Helvetica-BoldOblique;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000\c0;\cssrgb\c100000\c100000\c100000;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+## Heyo there!
 
-\f0\b\fs48 \cf0 Heyo there!
-\f1\b0\fs72 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### Welcome to the BFDI: Branches installation guide for Mac!
 
-\fs24 \cf0 Welcome to the BFDI: Branches installation guide for Mac!\
-NOTE THAT THIS IS UNOFFICIAL!! Made by @themines.\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### NOTE THAT THIS IS UNOFFICIAL!! Made by @themines.
 
-\f0\b\fs28 \cf0 Requirements\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### Requirements
+- MacOS Monterey (12.0.0) and newer (MacOS Sequoia (15 beta) support not tested)
+- Intel x86 or Apple Silicon CPUs
+- Internet connection (this does not come with any of the files pre-installed, which is why this is so small)
 
-\f1\b0\fs24 \cf0 - MacOS Monterey (12.0.0) and newer (MacOS Sequoia (15 beta) support not tested)\
-- Intel x86 or Apple Silicon CPUs\
-- Internet connection (this does not come with any of the files pre-installed, which is why this is so small)\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+## Install
 
-\f0\b\fs28 \cf0 Install\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+A video tutorial can be found at https://objectshows.net/bfdibranchesmacos.mp4.
+BFDI: Branches will be automatically installed.
 
-\fs24 \cf0 A video tutorial can be found at https://objectshows.net/bfdibranchesmacos.mp4.
-\f1\b0 \
-BFDI: Branches will be automatically installed.\
-\
-To install, run the install executable inside this folder. This will result in the terminal app opening. This is expected. 
-\f0\b You will be prompted to install command line developer tools if you haven\'92t already, which you should accept
-\f1\b0 . You may be asked to input your password at certain points in the installation. After this, the terminal app will install everything required and put the \'93BFDIBranches\'94 zip file(with the game inside) in your Downloads folder.\
-You\'92ll be prompted on whether you\'92d like to uninstall non-required dependencies.\
+To install, run the install executable inside this folder. This will result in the terminal app opening. This is expected. You will be prompted to install command line developer tools if you haven’t already, which you should accept. You may be asked to input your password at certain points in the installation. After this, the terminal app will install everything required and put the “BFDIBranches” zip file(with the game inside) in your Downloads folder.
 
-\f0\b You\'92re done!
-\f1\b0 \
-Enjoy!\
-\
-Scroll down for more info and uninstallation instructions\
-\
-\
-\
-\
-\
-\
-\
-\
-\
+You’ll be prompted on whether you’d like to uninstall non-required dependencies.
 
-\f0\b This guide installs the following applications:
-\f1\b0 \
-- 
-\f0\b Homebrew (brew)
-\f1\b0  - \cb2 https://brew.sh/ \cb1 -  Package (or app) manager that we\'92ll use to install what we need to run the game. This makes it so you don\'92t have to do anything on your end. This will not affect any other apps you have on your computer, and uninstalling the app can be done through the guide below or with the \'93uninstall-brew.sh\'94 file in this folder. If you already have homebrew installed, the installer will do nothing to the already existing installation.\
-\
-- 
-\f0\b XCode Command Line Tools
-\f1\b0  - https://developer.apple.com/xcode/resources/ - Homebrew requires XCode\'92s command line tools to function. This is an app provided by apple and can be removed after the installation with the \'93uninstall-xcode.sh\'94 script. To install the app we run the xcode-select command which we simply use to trigger the installation prompt.\
-\
-- 
-\f0\b Wine, WineTricks, XQuartz
-\f1\b0  - https://www.winehq.org/ - Apps that \'93translate\'94 windows code to mac code. You will need to keep the apps on your computer. While installing XQuartz, it will add a background item you can remove in Settings > General > Login Items > XQuartz. BFDI: Branches will still work.\
-\
-- 
-\f0\b BFDI: Branches
-\f1\b0  - https://teambranches.itch.io/bfdi-branches - what, we did you think we wouldn\'92t install the actual game? what are you using this guide for then?\
-\
-Branches will be installed through a mirror due to itch.io having constantly changing download links, which implementing is beyond my scope of coding. If the version is outdated it should update upon starting or upon second startup. You can also install it directly from itch.io yourself.\
-\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+## This guide installs the following applications:
 
-\f0\b\fs36 \cf0 Uninstallation\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### Homebrew (brew) (https://brew.sh)
 
-\f1\b0\fs24 \cf0 You can uninstall everything from the installation script with the \'93uninstall\'94 executable located in the \'93BFDIBranches-MacOS\'94 folder. If you have moved the installation folders or renamed them you may need to manually remove the BFDI: Branches installation and the \'93BFDIBranchesMacOS\'94 folder.
-\f0\b\fs36 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Package (or app) manager that we’ll use to install what we need to run the game. This makes it so you don’t have to do anything on your end. This will not affect any other apps you have on your computer, and uninstalling the app can be done through the guide below or with the “uninstall-brew.sh” file in this folder. If you already have homebrew installed, the installer will do nothing to the already existing installation.
 
-\fs28 \cf0 BFDI: Branches\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### XCode Command Line Tools (https://developer.apple.com/xcode/resources) 
 
-\f1\b0\fs24 \cf0 Delete the \'93BFDIBranches\'94 folder from your computer. or use the \'93uninstall\'94 executable. If you have moved the installation folder or renamed it you may need to manually remove the BFDI: Branches installation manually, which is simply titled \'93BFDIBranches\'94 by default.\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+Homebrew requires XCode’s command line tools to function. This is an app provided by apple and can be removed after the installation with the “uninstall-xcode.sh” script. To install the app we run the xcode-select command which we simply use to trigger the installation prompt.
 
-\f0\b\fs28 \cf0 Other stuff we downloaded
-\fs36 \
+### Wine, WineTricks, XQuartz (https://www.winehq.org)
+Apps that “translate” windows code to mac code. You will need to keep the apps on your computer. While installing XQuartz, it will add a background item you can remove in Settings > General > Login Items > XQuartz. BFDI: Branches will still work.
 
-\fs28 Homebrew\
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+### BFDI: Branches (https://teambranches.itch.io/bfdi-branches)
 
-\fs24 \cf0 Uninstalling will not break BFDI: Branches, though if you update your MacOS you may need this to get the game to continue working if there were major changes.
-\fs28 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+what, we did you think we wouldn’t install the actual game? what are you using this guide for then?
 
-\f1\b0\fs24 \cf0 Homebrew (or otherwise known as brew) can be uninstalled through the \'93uninstall-brew\'94 executable in this folder or with the command\
-\pard\pardeftab720\partightenfactor0
+Branches will be installed through a mirror due to itch.io having constantly changing download links, which implementing is beyond my scope of coding. If the version is outdated it should update upon starting or upon second startup. You can also install it directly from itch.io yourself.
 
-\f2\fs26 \cf0 \cb3 \expnd0\expndtw0\kerning0
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"\cb1 \
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+## Uninstallation
 
-\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 in Terminal.\
-Once you\'92re done, you can check that brew has been removed with\
-\pard\pardeftab720\partightenfactor0
+**You can uninstall everything from the installation script with the “uninstall” executable located in the “BFDIBranches-MacOS” folder**.
 
-\f2\fs26 \cf0 \cb3 \expnd0\expndtw0\kerning0
-brew --version\cb1 \
-\pard\pardeftab720\partightenfactor0
+### BFDI: Branches
 
-\f0\b\fs28 \cf0 Wine, WineTricks, & XQuartz\
+Delete the “BFDIBranches” folder from your computer. or use the “uninstall” executable. If you have moved the installation folder or renamed it you may need to manually remove the BFDI: Branches installation manually, which is simply titled “BFDIBranches” by default.
+Other stuff we downloaded
 
-\f3\i\fs24 Uninstalling WILL BREAK BFDI: Branches.
-\f0\i0\fs28 \
+### Homebrew
 
-\f1\b0\fs24 These can all be uninstalled with the \'93uninstall-full\'94 executable in this folder (will not remove homebrew) or with the commands\
-\pard\pardeftab720\partightenfactor0
+**Uninstalling will not break BFDI: Branches**, though **if you update your MacOS you may need this to get the game to continue working** if there were major changes.
+Homebrew (or otherwise known as brew) can be uninstalled through the “uninstall-brew” executable in this folder or with the command
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
+```
+in Terminal.
+Once you’re done, you can check that brew has been removed with
+```
+brew --version
+```
 
-\f2\fs26 \cf0 \cb3 brew uninstall wine-stable\
-brew uninstall winetricks\
-brew uninstall xquartz\cb1 \
-\pard\pardeftab720\partightenfactor0
+### Wine, WineTricks, & XQuartz
+Uninstalling WILL BREAK BFDI: Branches.
+These can all be uninstalled with the “uninstall-full” executable in this folder (will not remove homebrew) or with the commands
+```
+brew uninstall wine-stable
+brew uninstall winetricks
+brew uninstall xquartz
+```
 
-\f0\b\fs28 \cf0 XCode Command Line Tools\
-\pard\pardeftab720\partightenfactor0
-
-\fs24 \cf0 Uninstalling will not break BFDI: Branches, but will break Homebrew which is required for updates.
-\fs28 \
-\pard\pardeftab720\partightenfactor0
-
-\f1\b0\fs24 \cf0 XCode\'92s command line tools can be uninstalled through the \'93uninstall-xcode\'94 file or by deleting the folder located in /Macintosh HD/Library/Developer/ titled \'93CommandLineTools}
+### XCode Command Line Tools
+Uninstalling will not break BFDI: Branches, but will break Homebrew which is required for updates.
+XCode’s command line tools can be uninstalled through the “uninstall-xcode” file or by deleting the folder located in /Macintosh HD/Library/Developer/ titled “CommandLineTools"
