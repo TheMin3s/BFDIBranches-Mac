@@ -2,7 +2,7 @@
 
 ### Welcome to the BFDI: Branches installation guide for Mac!
 
-**NOTE THAT THIS IS UNOFFICIAL!! Check out the official itch.io page at https://teambranches.itch.io/bfdi-branches - BFDI: Branches by mationsbomb**. Made by @bfditho23
+**NOTE THAT THIS IS UNOFFICIAL!! Check out the official itch.io page at https://teambranches.itch.io/bfdi-branches - BFDI: Branches by mationsbomb**. Made by @themines
 
 ### Requirements
 - MacOS Monterey (12.0.0) and newer (MacOS Sequoia (15 beta) support not tested)
