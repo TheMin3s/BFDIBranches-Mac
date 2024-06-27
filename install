@@ -1,43 +1,73 @@
-echo "________________________"
+echo "Click [y] to continue or any other key to cancel"
+echo "This installer includes uninstallation files"
+echo "This installer gives you the ability to run most types of .exe files on MacOS. For more info, go to winehq.org."
+read -p "Are you sure you want to install BFDI: Branches for MacOS, which includes Wine and it's dependencies? Click [y] to select or any other key to cancel " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+echo "______________"
 echo ""
-echo "This installer will install BFDI: Branches and all apps required to run it on MacOS. If you encounter any errors, feel free to report them to @themines."
-echo "Installation will begin in 5 seconds"
+echo "Installing installation script and tools for uninstallation"
 echo ""
-echo "_________________________"
-
-# Wait for installation
-
-silent 5
-
-# Install XCode CLT
-
-xcode-select --install
-
-# Install Homebrew
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-# Install Wine and dependencies
-
-brew install --cask xquartz
-brew install --cask --no-quarantine wine-stable
-brew install winetricks
-echo "________________________"
+echo "______________"
+    curl -O https://objectshows.net/downloads/install.zip
+curl -O https://objectshows.net/BFDIBranches-MacOS.zip
+cd ~
+echo "______________"
 echo ""
-echo "Wine and homebrew installation complete - now installing BFDI: Branches"
-echo "If this part of the installation fails, feel free to get the files directly from their itch.io page."
+echo "Brew may prompt you to enter your password to install Wine and dependencies"
+echo "If you have not already installed Homebrew it will install it for you. You can remove"
+echo "it with the "uninstall-brew.sh" file located in the zip file we just downloaded. It'll be in /Downloads."
+echo "XQuartz will create a background application which can be removed in Settings > General > Login Items"
+echo "You will have to install XCode's CLT, which can be removed alongside Homebrew later on."
 echo ""
-echo "_________________________"
-
-# Install BFDI: Branches from objectshows.net mirror (consult readme for reason behind mirror)
-
-curl -O https://objectshows.net/downloads/BFDIBranches.zip
-
-# Inform the user the installation is done
-echo "________________________"
+echo "Starting in 10 seconds"
 echo ""
-echo "The installation is done! You should be able to find the game in your user folder (/Macintosh HD/Users/your name here)"
-echo "That's it from me for now! Uninstallation files can be found in the folder you downloaded from me. Have a nice rest of your day!:
-echo "made by @themines"
-echo ""
-echo "_________________________"
+echo "______________"
+sleep 10
+echo "Enter password to start installation"
+tar -xvf install.zip
+cd ~/install/
+sudo ./install
+cd ~/
+tar -xvf BFDIBranches.zip
+rm -f ~/BFDIBranches.zip
+mv ~/BFDIBranches/ ~/Downloads/
+mv ~/BFDIBranches-MacOS.zip ~/Downloads/
+echo "Click [y] to uninstall Homebrew or any other key to leave it as is"
+read -p "Would you like to uninstall Homebrew? It may be required to play BFDI: Branches when playing on newer MacOS versions." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - Remember you are uninstalling Homebrew."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall Homebrew
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+fi
+echo "Click [y] to uninstall XCode or click any other key to leave it as is"
+read -p "Would you like to uninstall XCode? It will render Homebrew useless if you chose to keep it." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - You are uninstalling XCode's Command Line Tools which renders Homebrew useless."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall XCode's CLT
+    rm -rf /Library/Developer/CommandLineTools
+fi
+echo "__________________"
+    echo ""
+    echo "Installation Complete"
+    echo "BFDI: Branches can be found at /Downloads/BFDIBranches. To run it, open it with Wine Stable."
+    echo "Further uninstallation instructions can be found in the BFDIBranches-MacOS.zip file in your Downloads folder."
+    echo "XQuartz may have created a background application which you can remove in Settings > General > Login Items at no impact to the BFDI: Branches installation."
+    echo ""
+    echo "If you liked my work, star the repo at https://github.com/TheMin3s/BFDIBranches-Mac!!"
+    echo ""
+    echo "__________________"
+fi

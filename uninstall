@@ -1,0 +1,65 @@
+echo "Welcome to the BFDI: Branches for Windows uninstaller! You will be prompted on what programs you would like to remove."
+sleep 3
+echo "Click [y] to uninstall Homebrew or any other key to leave it as is"
+read -p "Would you like to uninstall Homebrew? It may be required to play BFDI: Branches when playing on newer MacOS versions." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - Remember you are uninstalling Homebrew."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall Homebrew
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+fi
+echo "--------------------"
+echo ""
+echo "Click [y] to uninstall XCode or click any other key to leave it as is"
+read -p "Would you like to uninstall XCode? It will render Homebrew useless if you chose to keep it." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - You are uninstalling XCode's Command Line Tools which renders Homebrew useless."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall XCode's CLT
+    rm -rf /Library/Developer/CommandLineTools
+fi
+echo "--------------------"
+echo ""
+echo "Click [y] to uninstall Wine and it's dependencies or click any other key to leave it as is"
+read -p "Would you like to uninstall Wine? It will render the BFDI: Branches installation useless." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - You are uninstalling Wine which renders the BFDI: Branches installation useless."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall XCode's CLT
+    rm -rf /Library/Developer/CommandLineTools
+fi
+echo "--------------------"
+echo "IF YOU HAVE MOVED THE BFDI: BRANCHES INSTALLATION AND SCRIPTS FROM IT'S ORIGINAL LOCATION OR RENAMED THE FOLDERS THIS WILL NOT WORK!!!"
+echo ""
+echo "Click [y] to uninstall the BFDI: Branches installation and install scripts or click any other key to leave it as is"
+read -p "Would you like to uninstall BFDI: Branches and the install scripts? It will render the BFDI: Branches installation useless." -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    echo "Safety wait - You are uninstalling the BFDI: Branches installation and all the uninstall scripts, including this one."
+    echo "Starting in 10 seconds"
+    sleep 10
+    echo "Starting"
+    sleep 3
+    # Uninstall XCode's CLT
+    rm -rfi ~/Downloads/BFDIBranches
+    rm -rfi ~/Downloads/BFDIBranches-MacOS
+fi
+echo "-----"
+echo "Uninstallation tool finished"
+echo "-----"
