@@ -21,9 +21,9 @@ brew install winetricks
 echo "Wine and homebrew installation complete - now installing BFDI: Branches"
 echo "If this part of the installation fails, feel free to get the files directly from their itch.io page."
 
-# Install BFDI: Branches from objectshows.net mirror (consult readme.rtf for reason behind mirror)
+# Install BFDI: Branches from objectshows.net mirror (consult readme for reason behind mirror)
 
-curl -O https://itchio-mirror.cb031a832f44726753d6267436f3b414.r2.cloudflarestorage.com/upload2/game/2351815/10745967?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=3edfcce40115d057d0b5606758e7e9ee%2F20240627%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240627T031014Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=ba89580799aff7c24c442a317e3dae2384eadea430399af3e4f2ce55daed6bee
+curl -O https://objectshows.net/downloads/BFDIBranches.zip
 
 # Inform the user the installation is done
 
