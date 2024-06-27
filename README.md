@@ -20,6 +20,12 @@ You’ll be prompted on whether you’d like to uninstall non-required dependenc
 
 ## This guide installs the following applications:
 
+### BFDI: Branches (https://teambranches.itch.io/bfdi-branches)
+
+what, we did you think we wouldn’t install the actual game? what are you using this guide for then?
+
+Branches will be installed through a mirror due to itch.io having constantly changing download links, which implementing is beyond my scope of coding. If the version is outdated it should update upon starting or upon second startup. You can also install it directly from itch.io yourself.
+
 ### Homebrew (brew) (https://brew.sh)
 
 Package (or app) manager that we’ll use to install what we need to run the game. This makes it so you don’t have to do anything on your end. This will not affect any other apps you have on your computer, and uninstalling the app can be done through the guide below or with the “uninstall-brew.sh” file in this folder. If you already have homebrew installed, the installer will do nothing to the already existing installation.
@@ -30,12 +36,6 @@ Homebrew requires XCode’s command line tools to function. This is an app provi
 
 ### Wine, WineTricks, XQuartz (https://www.winehq.org)
 Apps that “translate” windows code to mac code. You will need to keep the apps on your computer. While installing XQuartz, it will add a background item you can remove in Settings > General > Login Items > XQuartz. BFDI: Branches will still work.
-
-### BFDI: Branches (https://teambranches.itch.io/bfdi-branches)
-
-what, we did you think we wouldn’t install the actual game? what are you using this guide for then?
-
-Branches will be installed through a mirror due to itch.io having constantly changing download links, which implementing is beyond my scope of coding. If the version is outdated it should update upon starting or upon second startup. You can also install it directly from itch.io yourself.
 
 ## Uninstallation
 
