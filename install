@@ -1,0 +1,32 @@
+echo "This installer will install BFDI: Branches and all apps required to run it on MacOS. If you encounter any errors, feel free to report them to @themines."
+echo "Installation will begin in 5 seconds"
+
+# Wait for installation
+
+silent 5
+
+# Install XCode CLT
+
+xcode-select --install
+
+# Install Homebrew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Install Wine and dependencies
+
+brew install --cask xquartz
+brew install --cask --no-quarantine wine-stable
+brew install winetricks
+echo "Wine and homebrew installation complete - now installing BFDI: Branches"
+echo "If this part of the installation fails, feel free to get the files directly from their itch.io page."
+
+# Install BFDI: Branches from objectshows.net mirror (consult readme.rtf for reason behind mirror)
+
+curl -O https://itchio-mirror.cb031a832f44726753d6267436f3b414.r2.cloudflarestorage.com/upload2/game/2351815/10745967?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=3edfcce40115d057d0b5606758e7e9ee%2F20240627%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20240627T031014Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&X-Amz-Signature=ba89580799aff7c24c442a317e3dae2384eadea430399af3e4f2ce55daed6bee
+
+# Inform the user the installation is done
+
+echo "The installation is done! You should be able to find the game in your user folder (/Macintosh HD/Users/your name here)"
+echo "That's it from me for now! Uninstallation files can be found in the folder you downloaded from me. Have a nice rest of your day!:
+echo "made by @themines"

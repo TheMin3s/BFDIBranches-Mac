@@ -1,0 +1,14 @@
+echo "Uninstalling this will remove Wine from your computer, and therefore break BFDI: Branches."
+echo "5 second safety wait..."
+silent 1
+echo "4 second safety wait..."
+silent 1
+echo "3 second safety wait..."
+silent 1
+echo "2 second safety wait..."
+silent 1
+echo "1 second safety wait..."
+silent 1
+brew uninstall wine-stable
+brew uninstall winetricks
+brew uninstall xquartz

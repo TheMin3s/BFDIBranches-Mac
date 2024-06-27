@@ -1,0 +1,12 @@
+echo "Uninstalling this will remove Homebrew from your computer."
+echo "5 second safety wait..."
+silent 1
+echo "4 second safety wait..."
+silent 1
+echo "3 second safety wait..."
+silent 1
+echo "2 second safety wait..."
+silent 1
+echo "1 second safety wait..."
+silent 1
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
