@@ -40,7 +40,9 @@ Once you’re done, you can check that brew has been removed with
 brew --version
 
 Wine, WineTricks, & XQuartz
+
 Uninstalling WILL BREAK BFDI: Branches.
+
 These can all be uninstalled with the “uninstall-full” executable in this folder (will not remove homebrew) or with the commands
 brew uninstall wine-stable
 brew uninstall winetricks
