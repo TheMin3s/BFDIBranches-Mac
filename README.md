@@ -14,7 +14,10 @@ Install
 A video tutorial can be found at https://objectshows.net/bfdibranchesmacos.mp4.
 BFDI: Branches will be automatically installed, so you’ll recieve the latest version upon downloading.
 
-To install, run the install executable inside this folder. This will result in the terminal app opening. This is expected. You will be prompted to install command line developer tools if you haven’t already, which you should accept. After this, the terminal app will install everything required and put the “BFDIBranches” folder (with the game inside) in the Macintosh HD/Users/<your username>/ folder. You may be asked to input your password at certain points in the installation. For example, for me it would be located in Macintosh HD/Users/themines/.
+To install, run the install executable inside this folder. This will result in the terminal app opening. This is expected. You will be prompted to install command line developer tools if you haven’t already, which you should accept. You may be asked to input your password at certain points in the installation. After this, the terminal app will install everything required and put the “BFDIBranches” zip file(with the game inside) in the Macintosh HD/Users/<your username>/ folder.  For example, for me it would be located in Macintosh HD/Users/themines/.
+You’re still not done!
+Once you’re in this folder, unzip the file and open it. DO NOT MOVE THE .EXE OUT OF THE FOLDER!! You can move the folder wherever you want. When attempting to open the game (the BFDIBranches.exe file), right click on it, select “Open With” and then click “Other.” Now, search for “Wine Stable,” and (optional) click “Always Open With” to open the .exe with Wine every time. Then, click open, and voila, your game is ready!
+Enjoy!
 
 Scroll down for more info and uninstallation instructions
 
