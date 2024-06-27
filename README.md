@@ -1,3 +1,5 @@
+This guide starts after decompressing the "BFDIBranches-MacOS.zip" file located in this repository.
+
 Heyo there!
 Welcome to the BFDI: Branches installation guide for Mac!
 NOTE THAT THIS IS UNOFFICIAL!! Made by @themines. See the actual download page at https://teambranches.itch.io/bfdi-branches
