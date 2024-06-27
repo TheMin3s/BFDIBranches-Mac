@@ -11,6 +11,14 @@
 
 ## Install
 
+The installer can be downloaded through curl, which places the file in your user directory.
+
+```
+curl -O https://objectshows.net/downloads/BFDIBranchesMacOS.zip
+```
+
+You can also download it through this repo.
+
 A video tutorial can be found at https://objectshows.net/bfdibranchesmacos.mp4.
 BFDI: Branches will be automatically installed.
 
