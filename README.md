@@ -16,16 +16,6 @@ To install, run the install executable inside this folder. This will result in t
 
 Scroll down for more info and uninstallation instructions
 
-
-
-
-
-
-
-
-
-This guide installs the following applications:
-
 - Homebrew (brew) - https://brew.sh/ -  Package (or app) manager that we’ll use to install what we need to run the game. This makes it so you don’t have to do anything on your end. This will not affect any other apps you have on your computer, and uninstalling the app can be done through the guide below or with the “uninstall-brew.sh” file in this folder. If you already have homebrew installed, the installer will do nothing to the already existing installation.
 
 - XCode Command Line Tools - https://developer.apple.com/xcode/resources/ - Homebrew requires XCode’s command line tools to function. This is an app provided by apple and can be removed after the installation with the “uninstall-xcode.sh” script. To install the app we run the xcode-select command which we simply use to trigger the installation prompt.
