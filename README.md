@@ -2,6 +2,8 @@ Remember to star if you liked my work!
 
 This guide starts after decompressing the "BFDIBranches-MacOS.zip" file located in this repository.
 
+All this really does is install Wine and BFDI: Branches onto your computer, so if you'd like to do a manual installation of wine you're welcome to do so
+
 Heyo there!
 Welcome to the BFDI: Branches installation guide for Mac!
 NOTE THAT THIS IS UNOFFICIAL!! Made by @themines. See the actual download page at https://teambranches.itch.io/bfdi-branches
