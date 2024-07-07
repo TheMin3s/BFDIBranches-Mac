@@ -1,3 +1,5 @@
+**There are already native unofficial ports available, so this project is now archived.**
+
 ## Heyo there!
 
 ### Welcome to the BFDI: Branches installation guide for Mac!
